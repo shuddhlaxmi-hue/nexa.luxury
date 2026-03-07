@@ -417,9 +417,51 @@ body {
   }
 }
 
+/* === BUTTONS & LINKS === */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #efc426 0%, #b87c27 100%);
+  color: #05070a;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(239, 196, 38, 0.3);
+}
+
+.text-link {
+  color: #efc426;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: opacity 0.3s;
+  margin-top: 1rem;
+}
+
+.text-link:hover {
+  opacity: 0.8;
+}
+
 /* === SECTIONS === */
 .section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   position: relative;
 }
 
@@ -454,18 +496,20 @@ body {
 }
 
 .content-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 2.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: all 0.3s ease;
 }
 
 .content-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-10px);
-  border-color: #efc426;
-  box-shadow: 0 20px 40px rgba(239, 196, 38, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(239, 196, 38, 0.3);
+  transform: translateY(-5px);
 }
 
 .card-icon {
@@ -1407,7 +1451,7 @@ body {
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   background: rgba(239, 196, 38, 0.1);
-  border: 1px solid rgba(239, 196, 38, 0.2);
+  border: 1px solid rgba(239, 196, 38, 0.3);
   border-radius: 50px;
   transition: all 0.3s ease;
 }
@@ -1450,6 +1494,145 @@ body {
       transparent);
   transform: rotate(45deg);
   animation: shine 3s infinite;
+}
+
+/* === COMPARISON ROW === */
+.comparison-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.comparison-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(239, 196, 38, 0.3);
+  transform: translateY(-5px);
+}
+
+.comparison-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-header i {
+  font-size: 2rem;
+}
+
+.bitcoin i {
+  color: #f7931a;
+}
+
+.bch i {
+  color: #8dc351;
+}
+
+.nexa i {
+  color: #efc426;
+}
+
+.comparison-list {
+  list-style: none;
+}
+
+.comparison-list li {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.comparison-list li i {
+  width: 1.2rem;
+  color: #efc426;
+  font-size: 1rem;
+}
+
+/* === TRUST GRID === */
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.trust-lead {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.trust-list {
+  list-style: none;
+}
+
+.trust-list li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.trust-list li i {
+  color: #efc426;
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+}
+
+.trust-list li strong {
+  color: #ffffff;
+}
+
+.bu-logo-card {
+  background: linear-gradient(135deg, rgba(239, 196, 38, 0.1) 0%, rgba(184, 124, 39, 0.1) 100%);
+  border: 1px solid rgba(239, 196, 38, 0.3);
+  border-radius: 24px;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.bu-icon {
+  font-size: 4rem;
+  color: #efc426;
+}
+
+.bu-logo-card span {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* === CARD FOOTER === */
+.card-footer {
+  margin-top: auto;
+  padding-top: 2rem;
 }
 
 @keyframes shine {
