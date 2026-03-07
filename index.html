@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Nexa.luxury - Understanding Nexa: The Next Evolution in Digital Currency</title>
+    <meta name="title" content="Nexa.luxury - Understanding Nexa: The Next Evolution in Digital Currency">
+    <meta name="description"
+        content="Learn about Nexa cryptocurrency - how it solves Bitcoin's problems, its supply mechanics, divisibility, and halving schedule. Simple explanations for everyone.">
+    <meta name="keywords"
+        content="Nexa, cryptocurrency, Bitcoin, blockchain, digital currency, halving, Satoshi, supply">
+    <meta name="author" content="Nexa.luxury">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexa.luxury/">
+    <meta property="og:title" content="Nexa.luxury - Understanding Nexa Cryptocurrency">
+    <meta property="og:description"
+        content="Learn about Nexa - the next evolution in digital currency that builds upon Bitcoin's foundation.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nexa.luxury/">
+    <meta property="twitter:title" content="Nexa.luxury - Understanding Nexa Cryptocurrency">
+    <meta property="twitter:description"
+        content="Learn about Nexa - the next evolution in digital currency that builds upon Bitcoin's foundation.">
+    <meta property="twitter:image" content="https://nexa.luxury/assets/og-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nexa.luxury/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JSON-LD Structured Data (AI SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Nexa.luxury",
+      "url": "https://nexa.luxury",
+      "logo": "https://nexa.luxury/favicon.ico",
+      "description": "Learn about Nexa cryptocurrency - how it solves Bitcoin's problems, its supply mechanics, and halving schedule.",
+      "knowsAbout": [
+        "Cryptocurrency",
+        "Blockchain",
+        "Nexa",
+        "Bitcoin",
+        "Digital Currency"
+      ],
+      "mainEntity": {
+        "@type": "Thing",
+        "name": "Nexa Cryptocurrency",
+        "description": "Nexa is a next-generation blockchain designed for global scale, with 21 trillion total supply and a 2-year halving cycle."
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Starfield Background -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo" aria-label="Nexa.luxury Home">
+                    <div class="logo-placeholder">
+                        <span class="logo-text">NEXA</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="#what-is-nexa">What is Nexa</a></li>
+                    <li><a href="#bitcoin-comparison">VS Bitcoin</a></li>
+                    <li><a href="#supply">Supply</a></li>
+                    <li><a href="#divisibility">Divisibility</a></li>
+                    <li><a href="#halving">Halving</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to <span class="gradient-text">NEXA</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The Next Evolution in Digital Currency
+                </p>
+                <p class="hero-description">
+                    Building on Bitcoin's foundation with enhanced scalability, speed, and innovation
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">21 Trillion</div>
+                        <div class="stat-label">Total Supply</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">Equal to BTC</div>
+                        <div class="stat-label">In Satoshis</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">Every 2 Years</div>
+                        <div class="stat-label">Halving Schedule</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Nexa Section -->
+    <section id="what-is-nexa" class="section">
+        <div class="container">
+            <h2 class="section-title">What is <span class="gradient-text">Nexa?</span></h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Next-Generation Blockchain</h3>
+                    <p>Nexa is a cutting-edge cryptocurrency designed to address Bitcoin's limitations while maintaining
+                        its core principles of decentralization and security.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Built for speed and scalability, Nexa can process transactions significantly faster than Bitcoin,
+                        making it practical for everyday use.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Decentralized</h3>
+                    <p>Maintaining the security principles that made Bitcoin revolutionary, while improving efficiency
+                        and accessibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bitcoin Comparison Section -->
+    <section id="bitcoin-comparison" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">How Nexa <span class="gradient-text">Solves Bitcoin's Problems</span></h2>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-header bitcoin">
+                        <i class="fab fa-bitcoin"></i>
+                        <h3>Bitcoin</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-clock"></i> <strong>Speed:</strong> ~7 transactions/second</li>
+                        <li><i class="fas fa-dollar-sign"></i> <strong>Fees:</strong> Can be very high during peak times
+                        </li>
+                        <li><i class="fas fa-expand"></i> <strong>Scalability:</strong> Limited by block size</li>
+                        <li><i class="fas fa-code"></i> <strong>Smart Contracts:</strong> Limited functionality</li>
+                    </ul>
+                </div>
+                <div class="vs-divider">
+                    <span>VS</span>
+                </div>
+                <div class="comparison-card">
+                    <div class="comparison-header nexa">
+                        <i class="fas fa-gem"></i>
+                        <h3>Nexa</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-rocket"></i> <strong>Speed:</strong> 10,000+ transactions/second</li>
+                        <li><i class="fas fa-coins"></i> <strong>Fees:</strong> Extremely low, consistent fees</li>
+                        <li><i class="fas fa-chart-line"></i> <strong>Scalability:</strong> Built to scale globally</li>
+                        <li><i class="fas fa-laptop-code"></i> <strong>Smart Contracts:</strong> Native UTXO-based
+                            contracts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supply Section -->
+    <section id="supply" class="section">
+        <div class="container">
+            <h2 class="section-title">Understanding <span class="gradient-text">Supply</span></h2>
+            <div class="supply-comparison">
+                <div class="supply-card">
+                    <div class="supply-icon bitcoin-color">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <h3>Bitcoin</h3>
+                    <div class="supply-number">21 Million</div>
+                    <p class="supply-description">BTC total supply</p>
+                </div>
+                <div class="supply-equals">
+                    <i class="fas fa-equals"></i>
+                </div>
+                <div class="supply-card">
+                    <div class="supply-icon nexa-color">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Nexa</h3>
+                    <div class="supply-number">21 Trillion</div>
+                    <p class="supply-description">NEX total supply</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="info-content">
+                    <h4>Why 21 Trillion?</h4>
+                    <p>While the numbers look different, Nexa's supply is actually designed to match Bitcoin's when
+                        considering the smallest units (Satoshis). This makes Nexa more user-friendly with whole numbers
+                        while maintaining scarcity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisibility Section -->
+    <section id="divisibility" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">The <span class="gradient-text">Divisibility</span> Secret</h2>
+            <div class="divisibility-content">
+                <div class="divisibility-explanation">
+                    <h3>Here's the Magic:</h3>
+                    <div class="equation-box">
+                        <div class="equation-row">
+                            <div class="equation-item">
+                                <span class="currency">Bitcoin</span>
+                                <span class="calculation">1 BTC = 100,000,000 Satoshis</span>
+                                <span class="result">21M × 100M = 2.1 Quadrillion Satoshis</span>
+                            </div>
+                        </div>
+                        <div class="equation-divider">
+                            <i class="fas fa-arrows-alt-v"></i>
+                        </div>
+                        <div class="equation-row">
+                            <div class="equation-item">
+                                <span class="currency">Nexa</span>
+                                <span class="calculation">1 NEX = 100 units</span>
+                                <span class="result">21T × 100 = 2.1 Quadrillion units</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisibility-cards">
+                    <div class="div-card">
+                        <div class="div-icon">
+                            <i class="fab fa-bitcoin"></i>
+                        </div>
+                        <h4>Bitcoin</h4>
+                        <p><strong>21 million</strong> BTC</p>
+                        <p>Divisible into <strong>100 million</strong> Satoshis each</p>
+                        <p class="total">Total: <strong>2.1 Quadrillion</strong> Satoshis</p>
+                    </div>
+                    <div class="div-card highlight">
+                        <div class="div-icon">
+                            <i class="fas fa-equals"></i>
+                        </div>
+                        <h4>Equal Supply!</h4>
+                        <p>Both currencies have the <strong>exact same number</strong> of smallest units</p>
+                    </div>
+                    <div class="div-card">
+                        <div class="div-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h4>Nexa</h4>
+                        <p><strong>21 trillion</strong> NEX</p>
+                        <p>Divisible into <strong>100</strong> units each</p>
+                        <p class="total">Total: <strong>2.1 Quadrillion</strong> units</p>
+                    </div>
+                </div>
+                <div class="key-insight">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Key Insight:</strong> Nexa has the same scarcity as Bitcoin! The 21 trillion number just
+                        means you work with whole numbers instead of tiny decimal fractions. It's more intuitive while
+                        being equally scarce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halving Section -->
+    <section id="halving" class="section">
+        <div class="container">
+            <h2 class="section-title">Understanding <span class="gradient-text">Halving</span></h2>
+            <div class="halving-intro">
+                <p>Both Bitcoin and Nexa use "halving" to control inflation and ensure scarcity. Here's how it works:
+                </p>
+            </div>
+            <div class="halving-grid">
+                <div class="halving-card">
+                    <div class="halving-header bitcoin-bg">
+                        <i class="fab fa-bitcoin"></i>
+                        <h3>Bitcoin Halving</h3>
+                    </div>
+                    <div class="halving-body">
+                        <div class="halving-stat">
+                            <span class="stat-number">Every 4 Years</span>
+                            <span class="stat-desc">Halving Frequency</span>
+                        </div>
+                        <div class="halving-timeline">
+                            <div class="timeline-item">
+                                <span class="year">2009-2012</span>
+                                <span class="reward">50 BTC</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2012-2016</span>
+                                <span class="reward">25 BTC</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2016-2020</span>
+                                <span class="reward">12.5 BTC</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2020-2024</span>
+                                <span class="reward">6.25 BTC</span>
+                            </div>
+                            <div class="timeline-item current">
+                                <span class="year">2024-2028</span>
+                                <span class="reward">3.125 BTC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="halving-card">
+                    <div class="halving-header nexa-bg">
+                        <i class="fas fa-gem"></i>
+                        <h3>Nexa Halving</h3>
+                    </div>
+                    <div class="halving-body">
+                        <div class="halving-stat">
+                            <span class="stat-number">Every 2 Years</span>
+                            <span class="stat-desc">Halving Frequency</span>
+                        </div>
+                        <div class="halving-timeline">
+                            <div class="timeline-item">
+                                <span class="year">Year 1-2</span>
+                                <span class="reward">10M NEX</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">Year 3-4</span>
+                                <span class="reward">5M NEX</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">Year 5-6</span>
+                                <span class="reward">2.5M NEX</span>
+                            </div>
+                            <div class="timeline-item current">
+                                <span class="year">Year 7-8</span>
+                                <span class="reward">1.25M NEX</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">Year 9-10</span>
+                                <span class="reward">625K NEX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="halving-explanation">
+                <div class="explanation-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h4>What is Halving?</h4>
+                    <p>Halving is when the reward for mining new blocks gets cut in half. This happens automatically and
+                        ensures that the total supply cap is never exceeded, creating digital scarcity similar to gold.
+                    </p>
+                </div>
+                <div class="explanation-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Why Does it Matter?</h4>
+                    <p>Halving reduces the rate at which new coins enter circulation, making the cryptocurrency more
+                        scarce over time. Historically, this has been associated with price appreciation as supply
+                        growth slows.</p>
+                </div>
+                <div class="explanation-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h4>Nexa's Faster Schedule</h4>
+                    <p>Nexa halves every 2 years instead of 4, reaching its maximum scarcity faster while still
+                        maintaining the same total supply principles as Bitcoin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Why <span class="gradient-text">Nexa?</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Blazing Fast</h3>
+                    <p>Process over 10,000 transactions per second with instant confirmation, making it practical for
+                        real-world payments.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Low Fees</h3>
+                    <p>Transaction fees remain consistently low, even during network congestion. Pay fractions of a cent
+                        to send any amount.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Smart Contracts</h3>
+                    <p>Native UTXO-based smart contracts enable complex applications while maintaining Bitcoin's
+                        security model.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>User Friendly</h3>
+                    <p>Work with whole numbers instead of confusing decimals. Send 100 NEX instead of 0.00000100 BTC.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Proven Security</h3>
+                    <p>Built on battle-tested cryptographic principles with improvements learned from Bitcoin's 15-year
+                        history.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Scalable</h3>
+                    <p>Designed from the ground up to scale globally without sacrificing decentralization or security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-placeholder">
+                        <span class="logo-text">NEXA</span>
+                    </div>
+                    <p>The next evolution in digital currency</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#what-is-nexa">What is Nexa</a></li>
+                        <li><a href="#bitcoin-comparison">VS Bitcoin</a></li>
+                        <li><a href="#supply">Supply</a></li>
+                        <li><a href="#halving">Halving</a></li>
+                    </ul>
+                </div>
+                <div class="footer-community">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-emails">
+                        <li><a href="mailto:kashish@nexa.luxury"><i class="fas fa-envelope"></i> kashish@nexa.luxury</a>
+                        </li>
+                        <li><a href="mailto:nexa@nexa.luxury"><i class="fas fa-envelope"></i> nexa@nexa.luxury</a></li>
+                        <li><a href="mailto:amit@nexa.luxury"><i class="fas fa-envelope"></i> amit@nexa.luxury</a></li>
+                    </ul>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nexa.luxury. Educational resource for understanding Nexa cryptocurrency.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="dist/main.js"></script>
+</body>
+
+</html>

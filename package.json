@@ -1,0 +1,36 @@
+{
+    "name": "nexa.luxury",
+    "version": "1.0.0",
+    "description": "Nexa.luxury - Understanding Nexa: The Next Evolution in Digital Currency",
+    "main": "index.html",
+    "scripts": {
+        "sass": "npx sass scss/styles.scss css/styles.css --watch",
+        "sass:build": "npx sass scss/styles.scss css/styles.css --style=compressed --no-source-map",
+        "serve": "npx serve .",
+        "dev": "npm-run-all --parallel sass serve",
+        "build": "npm run sass:build && npm run build:js && npm run seo",
+        "build:js": "npx esbuild js/main.js --bundle --outfile=dist/main.js --minify",
+        "sitemap": "bash scripts/generate-sitemap.sh",
+        "robots": "bash scripts/generate-robots.sh",
+        "seo": "npm run sitemap && npm run robots",
+        "test": "echo \"No tests specified\" && exit 0"
+    },
+    "keywords": [
+        "nexa",
+        "cryptocurrency",
+        "bitcoin",
+        "blockchain",
+        "digital currency",
+        "luxury",
+        "education"
+    ],
+    "author": "Nexa.luxury",
+    "license": "MIT",
+    "devDependencies": {
+        "esbuild": "^0.19.12",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.69.0",
+        "serve": "^14.2.1"
+    },
+    "homepage": "https://nexa.luxury"
+}

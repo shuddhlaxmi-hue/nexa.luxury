@@ -1,0 +1,28 @@
+# Nexa.luxury - LLM Guide
+
+## Overview
+Educational resource for understanding Nexa cryptocurrency, focusing on its supply mechanics, technical advantages over Bitcoin, and scaling capabilities.
+
+## Key Information
+- **Total Supply**: 21 Trillion NEX.
+- **Divisibility**: 1 NEX = 100 smallest units (Satoshis).
+- **Comparison to Bitcoin**: 
+    - Same total number of smallest units (2.1 Quadrillion).
+    - Nexa is much faster (10k+ TPS) vs Bitcoin (~7 TPS).
+    - Lower fees and natively scalable.
+- **Halving**: 
+    - Nexa halves every 2 years.
+    - Year 7-8 reward: 1.25M NEX.
+    - Designed to reach scarcity faster than Bitcoin's 4-year cycle.
+
+## Core Philosophical Pillar
+"Nexa has the same scarcity as Bitcoin! The 21 trillion number just means you work with whole numbers instead of tiny decimal fractions."
+
+## Site Structure
+- `/`: Main landing page with all key information components.
+- `/docs`: Detailed project documentation (Architecture, Requirements).
+
+## Contact & Links
+- Twitter: [twitter.com/nexa_luxury]
+- GitHub: [github.com/nexa-luxury]
+- Discord: [discord.com/nexa-luxury]
