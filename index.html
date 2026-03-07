@@ -184,11 +184,11 @@
                         <h3>Bitcoin (BTC)</h3>
                     </div>
                     <ul class="comparison-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Fair Launch:</strong> Yes (2009)</li>
+                        <li><i class="fas fa-times-circle"></i> <strong>Smart Contracts:</strong> No (Native)</li>
                         <li><i class="fas fa-clock"></i> <strong>Speed:</strong> ~7 TPS</li>
                         <li><i class="fas fa-dollar-sign"></i> <strong>Fees:</strong> ~$0.50 - $50+</li>
-                        <li><i class="fas fa-hourglass-half"></i> <strong>Block Time:</strong> 10 Mins</li>
-                        <li><i class="fas fa-layer-group"></i> <strong>Scaling:</strong> Off-chain only</li>
-                        <li><i class="fas fa-times-circle"></i> <strong>Tokens:</strong> Not native</li>
+                        <li><i class="fas fa-layer-group"></i> <strong>Nature:</strong> Store of Value</li>
                     </ul>
                 </div>
 
@@ -199,12 +199,12 @@
                         <h3>Bitcoin Cash (BCH)</h3>
                     </div>
                     <ul class="comparison-list">
-                        <li><i class="fas fa-clock"></i> <strong>Speed:</strong> ~100 TPS</li>
+                        <li><i class="fas fa-times-circle"></i> <strong>Fair Launch:</strong> No (Fork)</li>
+                        <li><i class="fas fa-dot-circle"></i> <strong>Smart Contracts:</strong> Basic (CashTokens)</li>
+                        <li><i class="fas fa-clock"></i> <strong>Speed:</strong> ~100+ TPS</li>
                         <li><i class="fas fa-dollar-sign"></i> <strong>Fees:</strong>
                             < $0.01</li>
-                        <li><i class="fas fa-hourglass-half"></i> <strong>Block Time:</strong> 10 Mins</li>
-                        <li><i class="fas fa-expand-arrows-alt"></i> <strong>Scaling:</strong> Simple block size</li>
-                        <li><i class="fas fa-check-circle"></i> <strong>Tokens:</strong> Basic support</li>
+                        <li><i class="fas fa-exchange-alt"></i> <strong>Nature:</strong> Digital Cash</li>
                     </ul>
                 </div>
 
@@ -215,12 +215,12 @@
                         <h3>Nexa (NEX)</h3>
                     </div>
                     <ul class="comparison-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Fair Launch:</strong> Yes (2022)</li>
+                        <li><i class="fas fa-star"></i> <strong>Smart Contracts:</strong> Native (Advanced)</li>
                         <li><i class="fas fa-rocket"></i> <strong>Speed:</strong> 100,000+ TPS</li>
                         <li><i class="fas fa-coins"></i> <strong>Fees:</strong>
                             < $0.0001</li>
-                        <li><i class="fas fa-bolt"></i> <strong>Block Time:</strong> 2 Mins</li>
-                        <li><i class="fas fa-microchip"></i> <strong>Scaling:</strong> Hardware accelerated</li>
-                        <li><i class="fas fa-star"></i> <strong>Tokens:</strong> Native NFT & Token</li>
+                        <li><i class="fas fa-redo"></i> <strong>Nature:</strong> A Scalable Restart</li>
                     </ul>
                 </div>
             </div>
@@ -236,9 +236,9 @@
                     <div class="supply-icon bitcoin-color">
                         <i class="fab fa-bitcoin"></i>
                     </div>
-                    <h3>Bitcoin</h3>
+                    <h3>BTC / BCH</h3>
                     <div class="supply-number">21 Million</div>
-                    <p class="supply-description">BTC total supply</p>
+                    <p class="supply-description">Total supply each</p>
                 </div>
                 <div class="supply-equals">
                     <i class="fas fa-equals"></i>
@@ -247,7 +247,7 @@
                     <div class="supply-icon nexa-color">
                         <i class="fas fa-gem"></i>
                     </div>
-                    <h3>Nexa</h3>
+                    <h3>Nexa (NEX)</h3>
                     <div class="supply-number">21 Trillion</div>
                     <p class="supply-description">NEX total supply</p>
                 </div>
@@ -548,58 +548,92 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
+    <!-- Why Nexa (Protocols & Ecosystem) -->
     <section id="benefits" class="section">
         <div class="container">
             <h2 class="section-title">Why <span class="gradient-text">Nexa?</span></h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
+
+            <!-- Row 1: Core Performance -->
+            <div class="content-grid mb-4">
+                <div class="content-card">
+                    <div class="card-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
                     <h3>Blazing Fast</h3>
-                    <p>Process over 10,000 transactions per second with instant confirmation, making it practical for
-                        real-world payments.</p>
+                    <p>Process over 100,000 TPS with sub-2 minute confirmations, making it the fastest UTXO chain in
+                        existence.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
+                <div class="content-card">
+                    <div class="card-icon">
                         <i class="fas fa-hand-holding-usd"></i>
                     </div>
-                    <h3>Low Fees</h3>
-                    <p>Transaction fees remain consistently low, even during network congestion. Pay fractions of a cent
-                        to send any amount.</p>
+                    <h3>Ultra Low Fees</h3>
+                    <p>Pay fractions of a cent ($0.0001) for any transaction. Fees are designed to remain low even at
+                        global scale.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-code-branch"></i>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h3>Smart Contracts</h3>
-                    <p>Native UTXO-based smart contracts enable complex applications while maintaining Bitcoin's
-                        security model.</p>
+                    <h3>Native Smart Contracts</h3>
+                    <p>Unlike BCH's basic tokens, Nexa features native Layer-1 smart contracts for DeFi, NFTs, and
+                        complex dApps.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-users"></i>
+            </div>
+
+            <!-- Row 2: Protocols & Innovation -->
+            <div class="content-grid mb-4">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>User Friendly</h3>
-                    <p>Work with whole numbers instead of confusing decimals. Send 100 NEX instead of 0.00000100 BTC.
-                    </p>
+                    <h3>Advanced Protocols</h3>
+                    <p>Nexa uses <strong>TDP (Token Definition Protocol)</strong> and Group Tokenization to handle
+                        tokens as first-class citizens.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-lock"></i>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-share-alt"></i>
                     </div>
-                    <h3>Proven Security</h3>
-                    <p>Built on battle-tested cryptographic principles with improvements learned from Bitcoin's 15-year
-                        history.</p>
+                    <h3>UTXO Innovation</h3>
+                    <p>Leveraging and scaling the UTXO model (used by BTC/BCH) to provide parallel processing and better
+                        privacy.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-globe"></i>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-virus"></i>
                     </div>
-                    <h3>Scalable</h3>
-                    <p>Designed from the ground up to scale globally without sacrificing decentralization or security.
-                    </p>
+                    <h3>Hardware Scaling</h3>
+                    <p>Only Nexa is removing the scaling bottleneck through hardware-accelerated signature verification
+                        (BLiTZ).</p>
+                </div>
+            </div>
+
+            <!-- Row 3: Building The Future -->
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Ecosystem: Building</h3>
+                    <p>While BTC focus is just stores of value, Nexa is building Layer-1 DEXs, stablecoins, and global
+                        payment rails.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Fair & Decentralized</h3>
+                    <p>Launched with No ICO, No Premine, and No Developer Tax. Controlled by the community, for the
+                        community.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>BCH Comparison</h3>
+                    <p>BCH solved fees by increasing block size; Nexa solves everything else by rewriting the core for
+                        the modern era.</p>
                 </div>
             </div>
         </div>

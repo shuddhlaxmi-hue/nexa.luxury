@@ -491,8 +491,20 @@ body {
 /* === CONTENT CARDS === */
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+@media (max-width: 991px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .content-card {
@@ -1464,15 +1476,16 @@ body {
 
 .status-tag {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   background: #efc426;
-  color: #05070a;
+  color: #000000 !important;
   border-radius: 4px;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .highlight-border {
@@ -1633,6 +1646,17 @@ body {
 .card-footer {
   margin-top: auto;
   padding-top: 2rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* Assuming a common gap for grids */
+}
+
+.mb-4 {
+  margin-bottom: 3rem;
 }
 
 @keyframes shine {
