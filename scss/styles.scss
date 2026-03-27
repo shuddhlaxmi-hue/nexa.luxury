@@ -164,7 +164,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
+  width: auto;
+  padding: 0 1.2rem;
   height: 45px;
   background: linear-gradient(135deg, #efc426 0%, #ebc73f 50%, #b87c27 100%);
   border-radius: 8px;
@@ -185,12 +186,13 @@ body {
 
 .navbar .logo .logo-text {
   font-family: "Space Grotesk", "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   color: #05070a;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   position: relative;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .navbar .nav-toggle {
