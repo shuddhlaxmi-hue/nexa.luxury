@@ -13,7 +13,8 @@
         "sitemap": "bash scripts/generate-sitemap.sh",
         "robots": "bash scripts/generate-robots.sh",
         "seo": "npm run sitemap && npm run robots",
-        "test": "echo \"No tests specified\" && exit 0"
+        "test": "echo \"No tests specified\" && exit 0",
+        "push-deploy": "git push && gcloud compute ssh shuddhlaxmi@instance-20260206-094345 --zone asia-south1-c --project nekkha --command \"export NVM_DIR=\\$HOME/.nvm && . \\$NVM_DIR/nvm.sh && cd ~/static-sites/nexa.luxury && git pull && npm install && npm run build\""
     },
     "keywords": [
         "nexa",
